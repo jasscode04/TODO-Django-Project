@@ -1,84 +1,109 @@
 
-# 📝 TODO-Django-Project
+# MY TODO Project (Django Web App)
 
-A simple and clean ToDo web application built using Django that allows users to manage their daily tasks. It includes features like user registration, login/logout, task creation, and deletion with a Bootstrap-powered user interface.
-
----
-
-## 🚀 Features
-
-- 🔐 **User Authentication**: Register and log in securely to manage tasks.
-- ✅ **Task Management**:
-  - Add new tasks
-  - View a list of tasks
-  - Delete completed/unwanted tasks
-- 🎨 **Responsive UI**: Styled using Bootstrap for a clean and mobile-friendly experience.
+A Django-based Todo Web Application that allows users to sign up, log in, and manage their personal task lists.
 
 ---
 
-## 🛠️ Tech Stack
+## 🌟 Features
 
-- **Backend**: Django (Python)
-- **Frontend**: HTML, CSS, Bootstrap
-- **Database**: SQLite3 (default Django DB)
+- User authentication (Sign up, Login)
+- Add, edit, and delete todos
+- Task completion tracking
+- Responsive and clean UI
+- SQLite3 as the default database
 
 ---
-
-
-## ✨ Screenshort
-
-
-
-
 
 ## 📁 Project Structure
-TODO-Django-Project/
-├── todo/                  # Main app (models, views, forms)
-│   ├── migrations/
-│   ├── templates/
-│   ├── static/
-│   ├── forms.py
-│   ├── models.py
-│   ├── views.py
-│   └── urls.py
-├── TODO/                  # Project settings
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-├── db.sqlite3
-├── manage.py
-└── README.md
 
-
-
-
+```
+MY TODO Project/
+├── README.md
+├── todo/
+│   ├── db.sqlite3                # SQLite database
+│   ├── manage.py                 # Django project manager
+│   ├── todo/                     # Main Django application
+│   │   ├── admin.py
+│   │   ├── models.py
+│   │   ├── views.py
+│   │   ├── urls.py
+│   │   ├── settings.py
+│   │   ├── templates/            # HTML templates
+│   │   │   ├── signup.html
+│   │   │   ├── loginn.html
+│   │   │   ├── todo.html
+│   │   │   └── edit_todo.html
+│   │   ├── static/               # CSS and JavaScript
+│   │   │   ├── css/
+│   │   │   │   ├── styles.css
+│   │   │   │   └── index.css
+│   │   │   └── js/
+│   │   │       └── todo.js
+│   │   ├── migrations/
+│   │   │   └── 0001_initial.py
+```
 
 ---
 
-## ⚙️ Installation and Setup
+## ⚙️ Getting Started
 
-### 1. Clone the Repository
+### Prerequisites
 
-```bash
-git clone https://github.com/jasscode04/TODO-Django-Project.git
-cd TODO-Django-Project
+- Python 3.x
+- Django (install via pip)
 
+### Setup Instructions
 
+1. **Clone the Repository**
 
+   ```bash
+   git clone <your-repo-url>
+   cd "MY TODO Project/todo"
+   ```
 
-python -m venv env
-env\Scripts\activate   # For Windows
-# OR
-source env/bin/activate  # For Linux/Mac
+2. **Create a Virtual Environment (Optional but Recommended)**
 
-pip install -r requirements.txt
+   ```bash
+   python -m venv env
+   source env/bin/activate  # On Windows use `env\Scripts\activate`
+   ```
 
-python manage.py makemigrations
-python manage.py migrate
+3. **Install Dependencies**
 
-python manage.py runserver
+   ```bash
+   pip install django
+   ```
 
-**### Open your browser and go to:**
-http://127.0.0.1:8000/
+4. **Run Migrations**
 
+   ```bash
+   python manage.py migrate
+   ```
 
+5. **Run the Server**
+
+   ```bash
+   python manage.py runserver
+   ```
+
+6. **Open in Browser**
+
+   Navigate to `http://127.0.0.1:8000/`
+
+---
+
+## 🧩 App Overview
+
+- `signup.html`, `loginn.html`: User registration & login
+- `todo.html`: Displays the list of todos
+- `edit_todo.html`: Edit an existing todo
+- `todo.js`: JS interactivity
+- `styles.css`, `index.css`: Styling
+
+---
+
+## 📬 Contact
+
+Created by **Jasprit Singh Sanu**  
+📧 jaspritsinghsanu@gmail.com
